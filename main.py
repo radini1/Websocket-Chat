@@ -26,7 +26,7 @@ manager = ConnectionManager()
 
 
 @app.get('/')
-async def grt():
+async def get():
 	return HTMLResponse(html)
 
 @app.websocket('/ws/{client_id}')
